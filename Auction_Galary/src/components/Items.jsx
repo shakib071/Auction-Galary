@@ -1,8 +1,22 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 import BannerImage from '../assets/images/Banner-min.jpg';
 import { CiHeart } from "react-icons/ci";
+import Item from './Item';
 
 const Items = () => {
+
+    const [items, setItems] = useState([]);
+
+    useEffect(()=> {
+
+        fetch('items.json')
+        .then(res => res.json())
+        .then(data => setItems(data))
+    }, []);
+
+   
+
     return (
         <div className='bg-[rgba(128,128,128,.05)]'>
 
@@ -24,40 +38,15 @@ const Items = () => {
                      
                     </tr>
                     </thead>
+
+
                     <tbody>
 
-                    <tr>
-    
 
-                        <td className='w-6'><img src={BannerImage} alt="" /></td>
-                        <td className='text-[15px]'>Vintage Leica M3 Camera</td>
-                        <td className='text-[15px]'>$2,850</td>
-                        <td className='text-[15px]'>2 Days left</td>
-                        <td className='text-2xl '><CiHeart /></td>
 
-                    </tr>
-
-                    <tr>
-    
-
-                        <td className='w-6'><img src={BannerImage} alt="" /></td>
-                        <td className='text-[15px]'>Vintage Leica M3 Camera</td>
-                        <td className='text-[15px]'>$2,850</td>
-                        <td className='text-[15px]'>2 Days left</td>
-                        <td className='text-2xl '><CiHeart /></td>
-
-                    </tr>
-
-                    <tr>
-    
-
-                        <td className='w-6'><img src={BannerImage} alt="" /></td>
-                        <td className='text-[15px]'>Vintage Leica M3 Camera</td>
-                        <td className='text-[15px]'>$2,850</td>
-                        <td className='text-[15px]'>2 Days left</td>
-                        <td className='text-2xl '><CiHeart /></td>
-
-                    </tr>
+                    {items.map(item=> (
+                        <Item key = {item.id} item = {item}></Item>
+                    ))}
                
                     </tbody>
 

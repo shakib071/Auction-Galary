@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "title": "Vintage Leica M3 Camera",
+        "description": "A classic 1965 Rolex Submariner in excellent condition.",
+        "currentBidPrice": 2850,
+        "timeLeft": "2 Days left",
+        "bidsCount": 1,
+        "image": "https://i.ibb.co/pjMbJV3K/Bid1-min.jpg"
+    },
+     
+    {
+        "id": 2,
+        "title": "1965 Gibson SG Standard Electric Guitar",
+        "description": "A classic 1965 Rolex Submariner in excellent condition.",
+        "currentBidPrice": 5850,
+        "timeLeft": "2 Days left",
+        "bidsCount": 1,
+        "image": "https://i.ibb.co/PZw1N19L/Bid2-min.png"
+    },
+    
+    {
+        "id": 3,
+        "title": "Original Apple Macintosh 128K (1984)",
+        "description": "A classic 1965 Rolex Submariner in excellent condition.",
+        "currentBidPrice": 4850,
+        "timeLeft": "2 Days left",
+        "bidsCount": 1,
+        "image": "https://i.ibb.co/9H3K2Q6k/Bid3-min.png"
+    } ,
+    
+    {
+        "id": 4,
+        "title": "Rolex Submariner 16610",
+        "description": "A classic 1965 Rolex Submariner in excellent condition.",
+        "currentBidPrice": 2550,
+        "timeLeft": "2 Days left",
+        "bidsCount": 1,
+        "image": "https://i.ibb.co/hRQb8RMH/Bid4-min.jpg"
+    }, 
+    
+    {
+        "id": 5,
+        "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+        "description": "A classic 1965 Rolex Submariner in excellent condition.",
+        "currentBidPrice": 7850,
+        "timeLeft": "2 Days left",
+        "bidsCount": 1,
+        "image": "https://i.ibb.co/chXcbnrv/Bid5-min.png"
+    },
+    
+    {
+        "id": 6,
+        "title": "Banksy Original Screen Print",
+        "description": "A classic 1965 Rolex Submariner in excellent condition.",
+        "currentBidPrice": 5650,
+        "timeLeft": "2 Days left",
+        "bidsCount": 1,
+        "image": "https://i.ibb.co/QvkQ5m6M/Bid6-min.png"
+    },
+    
+    {
+        "id": 7,
+        "title": "Banksy Original Screen Print",
+        "description": "A classic 1965 Rolex Submariner in excellent condition.",
+        "currentBidPrice": 4850,
+        "timeLeft": "2 Days left",
+        "bidsCount": 1,
+        "image": "https://i.ibb.co/gKYcMTb/Bid7-min.png"
+    }
+]
