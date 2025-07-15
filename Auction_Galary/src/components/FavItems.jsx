@@ -1,10 +1,19 @@
 import React from 'react';
-import { CiHeart } from "react-icons/ci";
+// import { useState } from 'react';
 
+import { CiHeart } from "react-icons/ci";
 import './FavItems.css'; 
+import FavItemContainer from './FavItemContainer';
 
 const FavItems = ({bidData}) => {
-    console.log(bidData)
+
+    let totalBids = 0;
+
+
+    for(let i=0; i<bidData.length; i++) {
+        totalBids += bidData[i].currentBidPrice;
+    }
+    
     return (
         <div className='mt-7'>
 
@@ -19,12 +28,19 @@ const FavItems = ({bidData}) => {
                 <p className='mb-3'>Click the heart icon on any item to <br /> add it to your favorites</p>
             </div>
 
+            
+
+            {bidData.map(bData => (
+                
+                <FavItemContainer key = {bData.id} bData = {bData}></FavItemContainer>
+            ))}
+
             <hr />
 
             <div className='flex justify-center gap-15 my-5 font-semibold'>
 
                 <p>Total bids Amount</p>
-                <p>$0000</p>
+                <p>${totalBids}</p>
 
             </div>
 

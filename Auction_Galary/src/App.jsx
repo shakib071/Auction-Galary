@@ -5,21 +5,25 @@ import Banner from './components/Banner'
 import Items from './components/Items'
 import FavItems from './components/FavItems'
 import Footer from './components/Footer'
+ import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
   
   const [bidData,setBidData] = useState([]);
-
+  const notify = () => toast("Item added to favorites!");
 
   const handleBidData = (item) => {
     setBidData([...bidData, item]);
+    notify();
   }
 
   // console.log(bidData);
 
   return (
     <>
-     
+      <ToastContainer />
+
+
       <Navbar></Navbar>
       <Banner></Banner>
 
