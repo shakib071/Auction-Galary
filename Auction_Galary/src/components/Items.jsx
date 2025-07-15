@@ -4,7 +4,9 @@ import BannerImage from '../assets/images/Banner-min.jpg';
 import { CiHeart } from "react-icons/ci";
 import Item from './Item';
 
-const Items = () => {
+const Items = ({handleBidData}) => {
+
+    // console.log(handleBidData);
 
     const [items, setItems] = useState([]);
 
@@ -45,7 +47,7 @@ const Items = () => {
 
 
                     {items.map(item=> (
-                        <Item key = {item.id} item = {item}></Item>
+                        <Item key = {item.id} handleBidData={handleBidData} item = {item}></Item>
                     ))}
                
                     </tbody>

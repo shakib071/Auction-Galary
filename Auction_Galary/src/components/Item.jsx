@@ -1,7 +1,11 @@
 import React from 'react';
 import { CiHeart } from "react-icons/ci";
 
-const Item = ({item}) => {
+
+
+const Item = ({item , handleBidData}) => {
+
+    
     return (
         <>
              <tr>
@@ -11,7 +15,7 @@ const Item = ({item}) => {
                 <td className='text-[15px]'>{item.title}</td>
                 <td className='text-[15px]'>{item.currentBidPrice}</td>
                 <td className='text-[15px]'>2 Days left</td>
-                <td className='text-2xl '><CiHeart /></td>
+                <td onClick={()=> handleBidData(item)} className='text-2xl '><CiHeart /></td>
             
              </tr>
         </>

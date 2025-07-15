@@ -7,6 +7,9 @@ import Footer from './components/Footer'
 
 function App() {
   
+  const handleBidData = (item) => {
+    console.log(item.id);
+  }
 
   return (
     <>
@@ -15,7 +18,7 @@ function App() {
       <Banner></Banner>
 
       <div>
-          <Items></Items>
+          <Items handleBidData = {handleBidData}></Items>
           <FavItems></FavItems>
       </div>
 
