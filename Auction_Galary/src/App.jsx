@@ -8,6 +8,14 @@ import Footer from './components/Footer'
  import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
+
+
+  const handleRemove = (id) => {
+    const newData = bidData.filter((item) => item.id !== id);
+    setBidData(newData);
+    toast("Item removed from favorites!");
+  };
+
   
   const [bidData,setBidData] = useState([]);
   const notify = () => toast("Item added to favorites!");
@@ -16,6 +24,8 @@ function App() {
     setBidData([...bidData, item]);
     notify();
   }
+
+ 
 
   // console.log(bidData);
 
@@ -29,7 +39,7 @@ function App() {
 
       <div>
           <Items handleBidData = {handleBidData}></Items>
-          <FavItems bidData = {bidData}></FavItems>
+          <FavItems bidData = {bidData} handleRemove = {handleRemove} ></FavItems>
       </div>
 
       <Footer></Footer>

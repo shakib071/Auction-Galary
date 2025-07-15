@@ -5,9 +5,11 @@ import { CiHeart } from "react-icons/ci";
 import './FavItems.css'; 
 import FavItemContainer from './FavItemContainer';
 
-const FavItems = ({bidData}) => {
+
+const FavItems = ({bidData,handleRemove}) => {
 
     let totalBids = 0;
+
 
 
     for(let i=0; i<bidData.length; i++) {
@@ -32,7 +34,7 @@ const FavItems = ({bidData}) => {
 
             {bidData.map(bData => (
                 
-                <FavItemContainer key = {bData.id} bData = {bData}></FavItemContainer>
+                <FavItemContainer key = {bData.id} bData = {bData} handleRemove={handleRemove}></FavItemContainer>
             ))}
 
             <hr />
