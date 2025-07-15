@@ -3,7 +3,8 @@ import { CiHeart } from "react-icons/ci";
 
 import './FavItems.css'; 
 
-const FavItems = () => {
+const FavItems = ({bidData}) => {
+    console.log(bidData)
     return (
         <div className='mt-7'>
 

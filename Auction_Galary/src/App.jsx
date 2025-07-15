@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react';
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Items from './components/Items'
@@ -7,9 +8,14 @@ import Footer from './components/Footer'
 
 function App() {
   
+  const [bidData,setBidData] = useState([]);
+
+
   const handleBidData = (item) => {
-    console.log(item.id);
+    setBidData([...bidData, item]);
   }
+
+  // console.log(bidData);
 
   return (
     <>
@@ -19,7 +25,7 @@ function App() {
 
       <div>
           <Items handleBidData = {handleBidData}></Items>
-          <FavItems></FavItems>
+          <FavItems bidData = {bidData}></FavItems>
       </div>
 
       <Footer></Footer>
