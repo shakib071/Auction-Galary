@@ -20,10 +20,12 @@ const Items = ({handleBidData}) => {
    
 
     return (
-        <div className='w-[95%] grid justify-center items-center bg-[rgba(128,128,128,.05)]'>
+        <div className='w-[95%] mt-10 mx-auto grid justify-center items-center bg-[rgba(128,128,128,.05)]'>
+            <div className='mb-5'>
+                <p className='text-xl font-semibold'>Active Auction</p>
+                <p>Discover and bid on extraordinary items</p>
+            </div>
 
-            <p>Active Auction</p>
-            <p>Discover and bid on extraordinary items</p>
             
 
             <div className='bg-white'>

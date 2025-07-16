@@ -21,8 +21,8 @@ const Item = ({item , handleBidData}) => {
              <tr className=' border-2 border-gray-600 text-center'>
                 
             
-                <td className='w-6'><img className='w-10 h-9' src={item.image} alt="" /></td>
-                <td className='text-[15px]'>{item.title}</td>
+                <td className=''><img className='w-10 h-10 rounded-xl' src={item.image} alt="" /></td>
+                <td className='text-[15px] text-left'>{item.title}</td>
                 <td className='text-[15px]'>{item.currentBidPrice}</td>
                 <td className='text-[15px]'>2 Days left</td>
                 <td><button onClick={()=> {handleBidData(item);handleClick()}}  className={`text-2xl ${clicked ? 'cursor-not-allowed ' : 'cursor-pointer'}`} disabled={clicked}>{ clicked ? <FaHeart color={'red'} /> : <CiHeart size={30}/>}</button></td>

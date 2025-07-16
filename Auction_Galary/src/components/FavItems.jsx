@@ -21,14 +21,25 @@ const FavItems = ({bidData,handleRemove}) => {
 
 
             <div className='flex justify-center items-center gap-2 mb-5 mt-3 font-bold'>
-                <p><CiHeart></CiHeart></p>
-                <p>Favorite Items</p>
+                <p className='text-2xl'><CiHeart></CiHeart></p>
+                <p className='text-xl'>Favorite Items</p>
             </div>
 
-            <div className='text-center'>
-                <p className='font-bold'>No favorites yet</p>
-                <p className='mb-3'>Click the heart icon on any item to <br /> add it to your favorites</p>
-            </div>
+            {
+                bidData.length === 0 ? (
+                    <div className='text-center'>
+                    <p className='font-bold'>No favorites yet</p>
+                    <p className='mb-3'>
+                        Click the heart icon on any item to <br /> add it to your favorites
+                    </p>
+                    </div>
+                ) : null
+            }
+
+            
+
+            
+
 
             
 
