@@ -6,19 +6,19 @@ import { RxCross2 } from "react-icons/rx";
 const FavItemContainer = ({bData,handleRemove}) => {
     console.log(bData);
     return (
-        <div className=' flex justify-center items-center gap-2 mb-5 mt-3 font-semibold'>
-            <div><img className='w-10 h-13' src={bData.image} alt="" /></div>
-            <div>
+        <div className=' w-[70%] mx-auto flex justify-center items-center gap-2 mb-5 mt-3 font-semibold'>
+            <div className='w-[10%]'><img className='w-12 h-12 rounded-xl' src={bData.image} alt="" /></div>
+            <div className='w-[50%]'>
                 <p>{bData.title}</p>
                 
 
-                <div>
+                <div className=''>
                     <p>${bData.currentBidPrice}</p>
                     <p>Bids:{bData.bidsCount}</p>
                 </div>
 
             </div>
-            <div>
+            <div className=''>
                 <button onClick={()=> handleRemove(bData.id)}  className='cursor-pointer'><RxCross2 /></button>
             </div>
         </div>

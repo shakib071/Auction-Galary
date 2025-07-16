@@ -18,7 +18,7 @@ const Item = ({item , handleBidData}) => {
     
     return (
         <>
-             <tr>
+             <tr className=' border-2 border-gray-600 text-center'>
                 
             
                 <td className='w-6'><img className='w-10 h-9' src={item.image} alt="" /></td>

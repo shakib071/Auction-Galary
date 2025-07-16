@@ -18,6 +18,7 @@ function App() {
 
   
   const [bidData,setBidData] = useState([]);
+  
   const notify = () => toast("Item added to favorites!");
 
   const handleBidData = (item) => {

@@ -34,7 +34,7 @@ const FavItems = ({bidData,handleRemove}) => {
 
             {bidData.map(bData => (
                 
-                <FavItemContainer key = {bData.id} bData = {bData} handleRemove={handleRemove}></FavItemContainer>
+                <FavItemContainer className='' key = {bData.id} bData = {bData} handleRemove={handleRemove}></FavItemContainer>
             ))}
 
             <hr />

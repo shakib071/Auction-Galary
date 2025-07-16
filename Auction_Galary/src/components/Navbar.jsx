@@ -5,7 +5,7 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 const navbar = () => {
     return (
         
-        <div className='w-[90%] mx-auto'>
+        <div className='w-[95%] mx-auto'>
             
             <div className='flex justify-between items-center py-3'>
 

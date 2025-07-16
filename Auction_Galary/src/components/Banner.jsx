@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className='bg-[url("./assets/images/Banner-min.jpg")] bg-cover bg-center h-full px-5 py-20 w-full text-white mx-auto'>
+        <div className=' bg-[url("./assets/images/Banner-min.jpg")] bg-cover bg-center h-full px-5 py-20 w-full text-white mx-auto'>
             
             <div className='w-[50%]'>
                 <p className='text-2xl font-medium'>Bid on Unique Items from Around the World</p>
