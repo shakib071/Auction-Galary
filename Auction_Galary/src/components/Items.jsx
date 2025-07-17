@@ -20,11 +20,9 @@ const Items = ({handleBidData}) => {
    
 
     return (
-        <div className='w-[95%] mt-10 mx-auto grid justify-center items-center bg-[rgba(128,128,128,.05)]'>
-            <div className='mb-5'>
-                <p className='text-xl font-semibold'>Active Auction</p>
-                <p>Discover and bid on extraordinary items</p>
-            </div>
+        <div className='  mt-2 mx-auto grid justify-center items-center bg-[rgba(128,128,128,.05)]'>
+
+          
 
             
 
@@ -32,9 +30,9 @@ const Items = ({handleBidData}) => {
 
                 <div className="overflow-x-auto">
                 <table className="table table-xs table-pin-rows table-pin-cols">
-                    <thead>
-                    <tr className='border-2 border-gray-600 text-center'>
-                        <th>Items</th>
+                    <thead className=''>
+                    <tr className=' sm:text-lg md:text-xl lg:text-xl xl:text-[22px] 2xl:text-3xl border-2 border-gray-600 text-center'>
+                        <th className='xl:py-4'>Items</th>
                         <th></th>
                         <th>Current Bid</th>
                         <th>Time Left</th>

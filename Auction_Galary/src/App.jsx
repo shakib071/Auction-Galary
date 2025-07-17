@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Items from './components/Items'
 import FavItems from './components/FavItems'
+import Active_Auction from './components/Active_Auction'
 import Footer from './components/Footer'
  import { ToastContainer, toast } from 'react-toastify';
 
@@ -37,10 +38,16 @@ function App() {
 
       <Navbar></Navbar>
       <Banner></Banner>
+      <Active_Auction></Active_Auction>
+      <div className='lg:w-[98%] mx-auto lg:flex lg:justify-center  lg:gap-5 '>
+        <div className='lg:w-[74%]'>
+          <Items   handleBidData = {handleBidData}></Items>
+        </div>
+        <div className='lg:w-[26%]'>
+            <FavItems   bidData = {bidData} handleRemove = {handleRemove} ></FavItems>
+        </div>
+          
 
-      <div>
-          <Items handleBidData = {handleBidData}></Items>
-          <FavItems bidData = {bidData} handleRemove = {handleRemove} ></FavItems>
       </div>
 
       <Footer></Footer>
