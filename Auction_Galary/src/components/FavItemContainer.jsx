@@ -12,7 +12,7 @@ const FavItemContainer = ({bData,handleRemove}) => {
                 <p>{bData.title}</p>
                 
 
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-left gap-5 items-center'>
                     <p>${bData.currentBidPrice}</p>
                     <p>Bids:{bData.bidsCount}</p>
                 </div>
